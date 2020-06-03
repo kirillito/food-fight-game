@@ -1,9 +1,9 @@
-html>
+<html>
   <head>
     <meta charset="UTF-8" />
     <title>Food Fight Game</title>
     <!-- Load the Phaser game library -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser/2.4.2/phaser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.11.0/dist/phaser.js"></script>
 
     <!-- Some simple styles and fonts -->
     <style type="text/css">
@@ -12,7 +12,7 @@ html>
         /* Remove margins */
         margin: 0px;
         position: relative;
-        background-color: rgb(122, 187, 70);
+        background-color: rgb(199, 201, 202);
       }
       canvas {
         /* Center the canvas */
@@ -22,28 +22,6 @@ html>
     </style>
   </head>
   <body>
-    <script type="text/javascript">
-      var canvas;
-      var canvasContext;
-
-      window.onload = function() {
-        canvas = document.getElementById('gameCanvas');
-        canvasContext = canvas.getContext('2d');
-
-        var framesPerSecond = 30;
-        setInterval(drawEverything, 1000/framesPerSecond);
-      }
-
-      // Initialize the phaser game object
-      var WINDOW_WIDTH = 750;
-      var WINDOW_HEIGHT = 500;
-      var game = new Phaser.Game(WINDOW_WIDTH, WINDOW_HEIGHT, Phaser.AUTO, "", {
-        preload: preload,
-        create: create,
-        update: GameLoop
-      });
-
-      var WORLD_SIZE = { w: 750, h: 500 };
-    </script>
+    <script type="text/javascript" src="main.js"></script>
   </body>
 </html>
